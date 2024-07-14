@@ -21,9 +21,9 @@ spring:
   # todo 需替换配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://122.51.87.16:3306/bidb
+    url: jdbc:mysql://localhost:3306/bisys
     username: root
-    password: 123456
+    password: aA200191800
   # Redis 配置
   # todo 需替换配置，然后取消注释
 #  redis:
@@ -45,7 +45,7 @@ spring:
       max-file-size: 10MB
 server:
   address: 0.0.0.0
-  port: 8101
+  port: 8080
   servlet:
     context-path: /api
     # cookie 30 天过期
