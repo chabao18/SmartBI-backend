@@ -19,11 +19,16 @@ spring:
     timeout: 2592000
   # 数据库配置
   # todo 需替换配置
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/bisys
+#    username: root
+#    password: aA200191800
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/bisys
-    username: root
-    password: aA200191800
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://122.51.87.16:3306/bidb
+      username: chabao
+      password: 123456
 
   # Redis 配置
   # todo 需替换配置，然后取消注释
