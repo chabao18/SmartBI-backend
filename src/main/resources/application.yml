@@ -38,12 +38,12 @@ spring:
     port: 6379
     timeout: 5000
     password: 123456
-
   rabbitmq:
-    host: localhost
+    host: 122.51.87.16
     port: 5672
-    username: guest
-    password: guest
+    username: admin
+    password: 123456
+
   # 文件上传
   servlet:
     multipart:
