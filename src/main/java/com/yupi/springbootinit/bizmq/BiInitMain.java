@@ -12,7 +12,14 @@ public class BiInitMain {
     public static void main(String[] args) {
         try {
             ConnectionFactory factory = new ConnectionFactory();
-            // factory.setHost("localhost");
+            factory.setHost("122.51.87.16");
+            factory.setPort(5672);
+            factory.setUsername("admin");
+            factory.setPassword("123456");
+            System.out.println(factory.getHost());
+            System.out.println(factory.getPort());
+            System.out.println(factory.getUsername());
+            System.out.println(factory.getPassword());
             Connection connection = factory.newConnection();
             Channel channel = connection.createChannel();
             String EXCHANGE_NAME =  BiMqConstant.BI_EXCHANGE_NAME;
@@ -23,7 +30,7 @@ public class BiInitMain {
             channel.queueDeclare(queueName, true, false, false, null);
             channel.queueBind(queueName, EXCHANGE_NAME,  BiMqConstant.BI_ROUTING_KEY);
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
 
     }
