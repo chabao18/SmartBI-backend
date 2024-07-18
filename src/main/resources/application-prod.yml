@@ -41,7 +41,7 @@ server:
         max-age: 2592000
         # 解决跨域问题
         same-site: none
-        secure: true
+        secure: false
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
