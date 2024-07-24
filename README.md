@@ -2,6 +2,15 @@
 
 欢迎使用智能数据分析平台的后端部分。本项目旨在提供高效、稳定的后端服务，支持复杂的业务逻辑和数据处理。
 ![效果展示](src/main/resources/img/img.png)
+## 🍻项目描述
+基于 Spring Boot + MQ + AIGC + React 的智能数据分析平台。区别于传统 BI 平台，用户只需要导入
+原始数据集、并输入分析诉求，就能自动生成可视化图表及分析结论，实现数据分析的降本增效。
+
+系统加构图：![](src/main/resources/img/process.png)
+登陆界面：![](src/main/resources/img/img_1.png)
+智能分析页面：![](src/main/resources/img/img_3.png)
+支持异步分析：![](src/main/resources/img/img_4.png)
+
 
 ## 🚀技术栈
 
